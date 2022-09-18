@@ -181,7 +181,9 @@ footer {
 .about .IntroPic img {
     height: 480px;
 }
-
+.foot-list ul a{
+    color: silver;
+}
 @media(max-width: 720px) {
     .Intro {
         display: block;
