@@ -41,6 +41,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     background: var(--blue);
+    z-index: 99;
 }
 
 ul a {
