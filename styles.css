@@ -78,7 +78,9 @@ body {
 .top-notice-left label p {
     color: var(--grey);
 }
-
+.top-notice-right a{
+    color: var(--gold);
+}
 
 /*------Navbar----------*/
 nav {
