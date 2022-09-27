@@ -27,7 +27,20 @@ body {
     height: auto;
     background: var(--grey);
 }
-
+/*---Side Scroll Bar ---*/
+::-webkit-scrollbar {
+    width: 1.2vmin;
+  }
+  ::-webkit-scrollbar-track {
+    background: #010101;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, rgba(40, 118, 252, 0) 0%, rgb(205, 186, 157) 100%);
+    border-radius: 15px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(7, 17, 78);
+  }
 /*------top-notice----------*/
 .top-notice {
     position: absolute;
