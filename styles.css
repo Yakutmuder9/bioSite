@@ -261,7 +261,9 @@ main {
     background-size: cover;
     background-position: center;
 }
-
+.landing main{
+    margin-bottom: 5vmin;
+}
 .image-overlay{
      position: absolute;
     width: 5%;
@@ -462,8 +464,20 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
+.current-page{
+    color: #d68306!important;
+}
+.footer-copyrigte .foot-right{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-copyrigte{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 
