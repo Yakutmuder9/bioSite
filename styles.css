@@ -167,24 +167,25 @@ nav {
     position: relative;
     width: 100%;
     height: auto;
-    padding-bottom: 5vh;
     padding-top: 35px;
 
 }
 
 main {
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     padding-left: 25px;
     padding-right: 25px;
     justify-content: center;
 }
-
+.landing .main-page-text, .landing .main-page-image{
+    height: 80vh;
+}
 .main-container {
     width: 100%;
     max-width: 1200px;
-    height: 80vh;
+    height: auto;
     display: flex;
     align-items: center;
     margin-right: 25px;
@@ -289,7 +290,7 @@ main {
     justify-content: center;
     font-size: 25px;
     color: var(--grey);
-    margin-left: 30%;
+    margin-left: 35%;
     width: 40px;
     height: 60px;
     background: #133147;
@@ -419,13 +420,28 @@ main {
     font-size: 5vmin;
     border: 5px solid var(--gold);
 }
+#about-qout {
+    text-align: center;
+}
+#about-qout h1{
+    padding: 3vmin;
+    color: var(--gold);
+    text-align: center;
+}
+#about-qout hr{
+    background: var(--gold);
+    padding: 3px;
+}
 /*-----hobby--------*/
 .hobby .main-container{
     margin-top: 5vmin;
     width: 100%;
-    height: a;
+    height: auto;
     display: flex;
     background: rgb(254, 243, 243);
+}
+.hobby main{
+    height: auto;
 }
 .hobby-item-txt{
     width: 100%;
@@ -439,6 +455,7 @@ main {
 .hobby-item-img{
     width: 100%;
     height: 100%;
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -465,35 +482,81 @@ main {
 
 
 
-
-
 /*------footer----------*/
-footer {
+ footer {
     width: 100%;
-    background-color: #133147;
+    height: auto;
+    background-color: var(--blue);
     display: flex;
     justify-content: center;
 }
 
 .footer-container {
     width: 100%;
-    height: 12px;
+    height: 100%;
     max-width: 1200px;
-    background-color: var(--grey);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    margin-top: 50px;
-    padding: 15px 25px;
-    box-shadow: 2px -5px 8px #5184a9;
     display: flex;
-    align-items: center;
+    background-color: var(--blue);
+} 
+.foot-left, .foot-right{
+    width: 100%;
+    height: auto;
+    padding: 40px  25px;
+    color: var(--grey);
+}
+.foot-left{
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
+.form-field{
+    display: flex;
+    width: 100%;
+    margin-top: 3vmin;
+}
+.form-field label{
+    width: 100%;
+}
+.form-field input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+}
+.contact-line{
+    display: flex;
+    align-items: center;
+}
+.contact-line hr, .foot-left hr{
+   width: 150px;
+   margin-right: 10px;
+   height: 3px;
+   background: var(--gold);
+}
+.foot-left hr{
+    width: 100%;}
+.form-field label p{
+    margin: 6px 0px;
+}
+.form-field label i{
+    font-size: 10px;
+    color: darkkhaki;
+    align-self: top;
+}
+#form-purpose p{
+    margin: 3vmin 0px;
+}
+.foot-right button{
+    color: var(--blue);
+    background-color: var(--gold);
+    box-shadow: 4px 6px 10px #072134;
+    padding: 12px 20px;
+    font-size: 3vmin;
+}
 
-
-
-
-
+.label-gap{
+    margin-right: 12px;
+}
 
 
 
@@ -513,6 +576,20 @@ footer {
     }
     .about-main-img{
         height: 60vh;
+    }
+    .landing .IntroTxt h5{
+        width: 100%;
+        color: var(--grey);
+    }
+    .landing .main-page-image{
+        background-image: linear-gradient(0deg, rgba(19,49,71,1) 30%, rgba(19,49,71,0) 70%, rgba(19, 49, 71, 0.377) 100%),url(./images/1.jpg);
+
+    }
+    .image-pix-box:nth-child(3){
+        margin-left: 60%;
+    }
+    .footer-container{
+        display: block;
     }
 }
 
