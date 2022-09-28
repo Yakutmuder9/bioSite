@@ -435,13 +435,11 @@ main {
 /*-----hobby--------*/
 .hobby .main-container{
     margin-top: 5vmin;
+    margin-bottom: 5vmin;
     width: 100%;
-    height: auto;
+    height: 80vh;
     display: flex;
     background: rgb(254, 243, 243);
-}
-.hobby main{
-    height: auto;
 }
 .hobby-item-txt{
     width: 100%;
@@ -590,6 +588,9 @@ main {
     }
     .footer-container{
         display: block;
+    }
+    .hobby .main-container{
+        margin-bottom: 90vh;
     }
 }
 
