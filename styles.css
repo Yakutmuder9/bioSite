@@ -802,7 +802,10 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.hobby-item-img {
+    color: #d68306;
+    font-weight: 800;
+}
 .current-page {
     color: #d68306 !important;
 }
@@ -920,13 +923,15 @@ footer {
     box-shadow: 4px 6px 10px #072134;
     padding: 12px 20px;
     font-size: 3vmin;
+    cursor: pointer;
 }
 
 .label-gap {
     margin-right: 12px;
 }
-
-
+.foot-link{
+    color: #d68306;
+}
 
 
 @media(max-width: 720px) {
