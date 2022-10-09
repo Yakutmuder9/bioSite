@@ -802,9 +802,15 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .hobby-item-img {
     color: #d68306;
     font-weight: 800;
+}
+.landing-feature-container h1{
+    width: 100%;
+    text-align: center;
+    color: var(--blue);
 }
 .current-page {
     color: #d68306 !important;
@@ -929,7 +935,8 @@ footer {
 .label-gap {
     margin-right: 12px;
 }
-.foot-link{
+
+.foot-link {
     color: #d68306;
 }
 
@@ -976,5 +983,30 @@ footer {
 
     .hobby .main-container {
         margin-bottom: 90vh;
+    }
+}
+
+
+#IntroTxt {
+    overflow-y: hidden;
+    display: block;
+}
+
+#IntroTxt .greet,
+#IntroTxt .main-bold-text, 
+#IntroTxt .Into-Desc, #IntroTxt button {
+    animation-name: appear;
+    animation-duration: 1s;
+}
+
+@keyframes appear {
+    from {
+        transform: translateY(
+                calc(100vh - 50px)
+            )
+    }
+
+    to {
+        transform: translateY(0)
     }
 }
