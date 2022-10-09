@@ -16,12 +16,6 @@
     --gold: #ccb99d;
 }
 
-html {
-    width: 100vw;
-    height: auto;
-    overflow-x: hidden;
-}
-
 body {
     width: 100vw;
     height: auto;
@@ -107,10 +101,13 @@ body {
     box-shadow: 3px 5px 12px #4d4b4b;
 }
 
+
 /*------Navbar----------*/
-nav {
+#navbar {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
+    overflow: hidden;
     left: 0;
     color: var(--gold);
     width: 100%;
@@ -119,6 +116,7 @@ nav {
     justify-content: center;
     box-shadow: 2px -3px 50px #636e76;
     z-index: 999;
+    background-color: var(--grey) !important;
 }
 
 .nav-container {
@@ -176,7 +174,7 @@ nav {
     position: relative;
     width: 100vw;
     height: auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     padding-top: 35px;
 
 }
@@ -364,6 +362,7 @@ main {
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
     transition: all 0.2s;
 }
+
 .feature .item {
     width: 100%;
     height: 100%;
@@ -374,6 +373,7 @@ main {
     background-position: center;
 
 }
+
 .item--1 {
     background-image: url("https://i.guim.co.uk/img/media/a7fa20715ba481ea097ee5002804ddc321014505/0_48_3000_1800/master/3000.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=ec8961efb99b7448ebcf76d87505996a");
     /*  grid-row: 1 / 3;
@@ -452,9 +452,10 @@ main {
 
 
 
-.landing-feature-container{
+.landing-feature-container {
     margin-bottom: 5vmin;
 }
+
 .landing .card h3 {
     margin-top: 1rem;
     font-size: 1.25rem;
@@ -632,10 +633,14 @@ main {
     flex-direction: column;
     justify-content: space-between;
 }
-.about .contact-line{
+
+.about .contact-line {
     margin: 4vmin 0px;
 }
-.about .foot-left h3, .about .foot-left p, .about .foot-left hr{
+
+.about .foot-left h3,
+.about .foot-left p,
+.about .foot-left hr {
     margin: 4vmin 0px;
 }
 
@@ -775,7 +780,8 @@ main {
     line-height: 4vmin;
     background: #24303c;
 }
-.hobby-item-txt ul{
+
+.hobby-item-txt ul {
     width: 100%;
     height: 100%;
     padding: 5vmin;
@@ -783,6 +789,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .hobby-item-img {
     width: 100%;
     height: 100%;
